@@ -5,4 +5,18 @@ metadata:
   labels:
     tier: frontend
     app: nginx
-    
+spec:
+  selector:
+    matchLabels:
+      env: production
+  replicas: 3
+  template:
+    metadata:
+      name: nginx
+      labels:
+        env: production
+        app: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
