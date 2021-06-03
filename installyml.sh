@@ -5,3 +5,4 @@ do
     kubectl create -f $FILE
 done
 kubectl get pod,svc
+kubectl top pods
