@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: voting-app-deploy
   labels:
-    name: voting-app-deploy
+    name: voting-app
     app: demo-voting-app
 spec:
   replicas: 1
